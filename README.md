@@ -1,2 +1,2 @@
 # website
-The official ZOO-Project website. using hugo
+The official ZOO-Project website.

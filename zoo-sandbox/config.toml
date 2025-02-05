@@ -1,0 +1,9 @@
+baseURL = 'https://example.org'
+languageCode = 'en-us'
+
+
+theme = 'lugo'
+
+[params]
+  customCSS = ["css/style.css"]
+  customJS  = ["js/bubbles.js"]
