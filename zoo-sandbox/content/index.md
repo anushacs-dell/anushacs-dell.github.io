@@ -1,7 +1,7 @@
 +++
 date = '2025-02-05T06:19:44+05:30'
 draft = true
-title = ''
+title = 'Index'
 +++
 
 ## Welcome to Our Website!
