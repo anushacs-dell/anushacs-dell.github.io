@@ -103,6 +103,7 @@ main{
     scale: none;
     opacity: 1;
     transform: translate(0px, 0px);
+    color: #55be55;
 }
 
 .imgages {
@@ -228,6 +229,7 @@ main{
 .p-04{
     font-style: unset;
     font-size: 20px;
+    color: white;
 }
 
 .certificate{
@@ -321,23 +323,27 @@ main{
 
 .category{
     padding-top: 6em;
-    margin-left: 10em;
+    margin-left: 12em;
     width: 20em;
 }
 
 .head03{
     font-size: 33px;
     color: #55be55;
+    width: 12em;
 }
 
 .category-01{
-    width: 20em;
-    height: 10em;
-    background-color: #336c33;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-top: 9em;
+    width: 29em; 
+    height: 12em; 
+    background-color: #55be55; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+    border: 1px solid black; 
+    border-radius: 10px; 
+    margin-left: 8em;
+    display: flex; 
+    color: white; 
+    position: relative;
 }
 
 .wps-01{
@@ -345,6 +351,96 @@ main{
     gap: 5em;
     color: white;
 }
+
+
+
+.cheetah-img{
+    position: absolute;
+    z-index: 2;
+    /* margin-left: -2em; */
+    background-size: cover;
+    width: 8.3em;
+    height: 8.3em;
+    opacity: 0.5; 
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.cheetah-img:hover, 
+.ch-info:hover .cheetah-img {
+    opacity: 1; 
+}
+
+.ch-info{
+    position: relative;
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.6); 
+    margin-inline: 0.8em;
+    margin-top: 1.5em;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.ch-info:hover {
+    background-color: #142148; 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.img01-text{
+    position: absolute;
+    z-index: 1; 
+    margin-top:5em; 
+    color:black;
+    display: none;
+}
+
+.cheetah-img:hover .img01-text {
+    display: block;
+}
+
+
+.ch-text {
+    padding-left: 1em; 
+}
+
+.ch-text h4 {
+    margin-top: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.ch-text p {
+    margin-top: 1.5em;
+    font-size: 1em;
+    color: #444;
+    width: 12em;
+}
+
+.section2{
+    padding-top: 8em;
+    padding-bottom: 18em;
+    padding-inline: 10em;
+}
+
+.head04{
+    color: #55be55;
+    text-align: center;
+}
+
+.section3{
+    color: #142148;
+    width: 100%;
+    height: 30em;
+    background-color: #55be55;
+    padding-block: 3em;
+}
+
+
+
+
 
 @font-face {
 	font-family: 'ZOO-Font';
