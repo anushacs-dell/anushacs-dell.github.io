@@ -1,9 +1,32 @@
 baseURL = 'https://example.org'
 languageCode = 'en-us'
-
-
 theme = 'lugo'
 
 [params]
-  customCSS = ["css/style.css"]
-  customJS  = ["js/bubbles.js"]
+description = 'The ZOO-Project is an open source processing platform, released under MIT/X11 Licence. It provides the polyglot ZOO-Kernel, a server implementation of the Web Processing Service (WPS) (1.0.0 and 2.0.0) and the OGC API - Processes standards published by the OGC'
+primaryColor = "#55be55"
+secondaryColor = "#142148"
+textColor = "#ffffff"
+textColorDark = "#142148"
+
+# navigation
+    [Languages.en.menu]
+
+    [[Languages.en.menu.main]]
+      weight = 1
+      name = "About"
+      url = "/about"
+      hasChildren = true
+
+    [[Languages.en.menu.main]]
+        parent = "About"
+        name = "Introduction"
+        weight = 1
+        URL = "/about/introduction"
+
+     [[Languages.en.menu.main]]
+        parent = "About"
+        name = "Tribe"
+        weight = 2
+        URL = "/about/tribe"
+
