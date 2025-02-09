@@ -10,23 +10,45 @@ textColor = "#ffffff"
 textColorDark = "#142148"
 
 # navigation
-    [Languages.en.menu]
-
-    [[Languages.en.menu.main]]
+  [menu]
+     [[menu.main]]
+     identifier = "index"
+      name = "Index"
+      url = "/"
       weight = 1
+
+    [[menu.main]]
+      identifier = "about"
       name = "About"
-      url = "/about"
+      url = "#"
+      weight = 2
       hasChildren = true
 
-    [[Languages.en.menu.main]]
-        parent = "About"
-        name = "Introduction"
-        weight = 1
-        URL = "/about/introduction"
+    [[menu.main]]
+      identifier = "introduction"
+      name = "Introduction"
+      url = "https://zoo-project.github.io/docs/intro.html"
+      parent = "about"
+      weight = 3
 
-     [[Languages.en.menu.main]]
-        parent = "About"
-        name = "Tribe"
-        weight = 2
-        URL = "/about/tribe"
+     [[menu.main]]
+      identifier = "tribe"
+      name = "Tribe"
+      url = "/about/tribe/"
+      parent = "about"
+      weight = 4
+
+      [[menu.main]]
+      identifier = "event"
+      name = "Event"
+      url = "/about/event/"
+      parent = "about"
+      weight = 5
+
+      [[menu.main]]
+      identifier = "identity"
+      name = "Identity"
+      url = "/about/identity/"
+      parent = "about"
+      weight = 6
 
