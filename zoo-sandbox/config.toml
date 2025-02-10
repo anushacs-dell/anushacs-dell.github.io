@@ -52,3 +52,81 @@ textColorDark = "#142148"
       parent = "about"
       weight = 6
 
+      [[menu.main]]
+      identifier = "resources"
+      name = "Resources"
+      url = "#"
+      weight = 2
+      hasChildren = true
+
+      [[menu.main]]
+      identifier = "download"
+      name = "Download"
+      url = "/resources/download/"
+      parent = "resources"
+      weight = 3
+
+      [[menu.main]]
+      identifier = "userguide"
+      name = "Userguide"
+      url = "/resources/userguide/"
+      parent = "resources"
+      weight = 4
+
+      [[menu.main]]
+      identifier = "workshops"
+      name = "Workshops"
+      url = "/resources/workshops/"
+      parent = "resources"
+      weight = 5
+
+      [[menu.main]]
+      identifier = "API"
+      name = "API"
+      url = "https://zoo-project.github.io/docs/C_API/"
+      parent = "resources"
+      weight = 6
+
+      [[menu.main]]
+      identifier = "examples"
+      name = "Examples"
+      url = "/resources/examples/"
+      parent = "resources"
+      weight = 7
+
+      [[menu.main]]
+      identifier = "presentation"
+      name = "Presentation"
+      url = "/resources/presentation/"
+      parent = "resources"
+      weight = 8
+
+      [[menu.main]]
+      identifier = "get-involved"
+      name = "Get Involved"
+      url = "#"
+      weight = 2
+      hasChildren = true
+
+      [[menu.main]]
+      identifier = "sponsorship"
+      name = "Sponsorship"
+      url = "/resources/sponsorship/"
+      parent = "get-involved"
+      weight = 3
+
+      [[menu.main]]
+      identifier = "knowledge_partners"
+      name = "knowledge Partners"
+      url = "/resources/knowledge_partners/"
+      parent = "get-involved"
+      weight = 4
+
+      [[menu.main]]
+      identifier = "feed_animals"
+      name = "Feed Animals"
+      url = "/resources/feed_animals/"
+      parent = "get-involved"
+      weight = 5
+
+
