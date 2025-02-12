@@ -1,34 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get-Involveds</title>
-
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/zoo-project.css" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Days+One" rel="stylesheet" type="text/css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> 
-    
-
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
+<html>
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>ZOO-Project | Open WPS platform</title>
-<link href="/css/bootstrap.css" rel="stylesheet">
-<link href="/css/zoo-project.css" rel="stylesheet">
-<link href="/css/ol.min.css" rel="stylesheet">
-<link href="/css/prism.css" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Days+One" rel="stylesheet" type="text/css">
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> 
+<title>Get-Involveds</title>
+
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/zoo-project.css" rel="stylesheet">
+    <link href="/css/ol.min.css" rel="stylesheet">
+    <link href="/css/prism.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Days+One" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> 
 </head>
-<body><nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
  <div class="container">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -136,7 +147,7 @@
 
 	    <li class="dropdown-header">Contribute</li>
 	    <li><a href="https://zoo-project.github.io/docs/contribute/index.html"><i class="fa fa-fw fa-user"></i> Contributor guide</a></li>
-	    <li><a href="/trac/"><i class="fa fa-fw fa-code"></i> Trac / SVN</a></li>
+	    <li><a href="/get-involved/trac/"><i class="fa fa-fw fa-code"></i> Trac / SVN</a></li>
 	    <li class="divider"></li>
 
 
@@ -147,7 +158,7 @@
 
 	    <li class="dropdown-header">Sponsor</li>
 	    <li><a href="/get-involved/sponsorship/"><i class="fa fa-fw fa-money"></i> Sponsorship</a></li>
-	    <li><a href="/new/Get involved/Knowledge partners"><i class="fa fa-fw fa-graduation-cap"></i> Knowledge partners</a></li>
+	    <li><a href="/get-involved/knowledge_partners/"><i class="fa fa-fw fa-graduation-cap"></i> Knowledge partners</a></li>
 	    <li class="divider"></li>
 
 
@@ -157,7 +168,7 @@
 
 
 	    <li class="dropdown-header">Support</li>
-	    <li><a href="/new/Get involved/Feed the animals"><i class="fa fa-fw fa-thumbs-o-up"></i> Feed the animals</a></li>
+	    <li><a href="/get-involved/feed_animals/"><i class="fa fa-fw fa-thumbs-o-up"></i> Feed the animals</a></li>
 
 
 
@@ -166,92 +177,26 @@
 
      </ul>
    </div>
-   
+       
  </div>
- 
 
+ <div class="subn">
+<nav class="navbar navbar-lower" role="navigation">
+<div class="container">
+   <ol class="breadcrumb zbr">
+  <li class="active"><i class="fa fa-home"></i> Home</li>
+   </ol>
+   <ul class="list-inline pull-right topr">
+    <li><a href="https://github.com/ZOO-Project/ZOO-Project/" class="btn btn-sm btn-hover btn-zoos hello" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Github"><span class="fa fa-github"></span></a></li>
+    <li><a href="https://www.openhub.net/p/zoo-project" class="btn btn-sm btn-hover btn-zoos hello" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Openhub"><span class="fa fa-circle-o"></span></a></li>
+   </ul>
+</div>
+</nav>
 
-
-
-
-
-
-<script src="/js/jquery-1.10.2.js"></script>
-<script src="/js/bootstrap.js"></script>
-<script src="/js/ol.min.js"></script>
-<script src="/js/prism.js"></script>
-<script>
-$('.navbar-lower').affix({offset: {top: 60}});
-$('[data-toggle="tooltip"]').tooltip();
-$(function(){
-var shrinkHeader = 80;
-$(window).scroll(function() {
-	var scroll = getCurrentScroll();
-	if ( scroll >= shrinkHeader ) {
-		$('.navbar-brand').addClass('navbar-shrink');
-		$('.navbar-inverse').addClass('navbar-colored');
-		$('.navbar-nav').css({"margin":"0 0 0 15px"});
-		$(".sun").show();
-	$('.navbar-lower').addClass('navbarlower-colored');
-	}
-	else{
-		$('.navbar-brand').removeClass('navbar-shrink');
-		$('.navbar-inverse').removeClass('navbar-colored');
-		$('.navbar-nav').css({"margin":"25px 0 0 25px"});
-		$(".sun").hide();
-		$('.navbar-lower').removeClass('navbarlower-colored');
-	}
-});
-function getCurrentScroll() {return window.pageYOffset;}
-});
-
-$(window).load(function(){
-  $( ".ct" ).animate({opacity: 1}, 3000, function() {$(".bird").show();}); 
-  var birdSound = document.getElementById('birdsound');
-  var birdTxt=document.getElementById('birdc');
-  birdTxt.onmouseover=function(){
-  birdSound.play();
-return false;
-};
-
-});
+</div>
+</nav>
 
  
-</script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22830578-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-22830578-1');
-</script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <main>
         
@@ -259,26 +204,16 @@ return false;
     <ul>
         
         <li>
-            <a href="/get-involved/sponsorship/">Sponsorship</a> - Feb 10, 2025
+            <a href="/get-involved/trac/">Trac</a> - Feb 12, 2025
         </li>
         
     </ul>
 
     </main>
+  
 
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get-Involveds</title>
+    
 
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/zoo-project.css" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Days+One" rel="stylesheet" type="text/css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> 
-</head>
-<body>
     <footer>
         <div class="container">
           <div class="row">
@@ -366,21 +301,66 @@ return false;
         <div class="container text-center">
           <p> © Copyright 2009 - 2024 - <a class="ext-link" href="http://www.zoo-project.org"><i class="icon-zoo-logo"></i> ZOO Project</a> - All Rights Reserved.</p> 
         </div>
-      </div>
-        
+      </div>    
     </div>
-</body>
 
 <script src="/js/jquery-1.10.2.js"></script>
 <script src="/js/bootstrap.js"></script>
+<script src="/js/ol.min.js"></script>
+<script src="/js/prism.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22830578-1"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</html>
-    
-<script src="/js/jquery-1.10.2.js"></script>
-<script src="/js/bootstrap.js"></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22830578-1"></script>
+
+
+
+
+    
+ <script>
+        $('.navbar-lower').affix({offset: {top: 60}});
+        $('[data-toggle="tooltip"]').tooltip();
+        $(function(){
+        var shrinkHeader = 80;
+        $(window).scroll(function() {
+            var scroll = getCurrentScroll();
+            if ( scroll >= shrinkHeader ) {
+                $('.navbar-brand').addClass('navbar-shrink');
+                $('.navbar-inverse').addClass('navbar-colored');
+                $('.navbar-nav').css({"margin":"0 0 0 15px"});
+                $(".sun").show();
+            $('.navbar-lower').addClass('navbarlower-colored');
+            }
+            else{
+                $('.navbar-brand').removeClass('navbar-shrink');
+                $('.navbar-inverse').removeClass('navbar-colored');
+                $('.navbar-nav').css({"margin":"25px 0 0 25px"});
+                $(".sun").hide();
+                $('.navbar-lower').removeClass('navbarlower-colored');
+            }
+        });
+        function getCurrentScroll() {return window.pageYOffset;}
+        });
+
+        $(window).load(function(){
+        $( ".ct" ).animate({opacity: 1}, 3000, function() {$(".bird").show();}); 
+        var birdSound = document.getElementById('birdsound');
+        var birdTxt=document.getElementById('birdc');
+        birdTxt.onmouseover=function(){
+        birdSound.play();
+        return false;
+        };
+
+        });
+
+        
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-22830578-1');
+        </script>
 </body>
 </html>

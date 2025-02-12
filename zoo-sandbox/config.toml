@@ -95,11 +95,22 @@ textColorDark = "#142148"
       weight = 7
 
       [[menu.main]]
+      identifier = "spatialtools"
+      name = "Spatial Tools"
+      url = "/resources/examples/spatialtools.html"
+      parent = "examples"
+      weight = 8
+
+      [[menu.main]]
       identifier = "presentation"
       name = "Presentation"
       url = "/resources/presentation/"
       parent = "resources"
-      weight = 8
+      weight = 9
+
+
+
+    
 
       [[menu.main]]
       identifier = "get-involved"
@@ -116,17 +127,24 @@ textColorDark = "#142148"
       weight = 3
 
       [[menu.main]]
+      identifier = "trac"
+      name = "Trac/SVN"
+      url = "/resources/trac/"
+      parent = "get-involved"
+      weight = 4
+
+      [[menu.main]]
       identifier = "knowledge_partners"
       name = "knowledge Partners"
       url = "/resources/knowledge_partners/"
       parent = "get-involved"
-      weight = 4
+      weight = 5
 
       [[menu.main]]
       identifier = "feed_animals"
       name = "Feed Animals"
       url = "/resources/feed_animals/"
       parent = "get-involved"
-      weight = 5
+      weight = 6
 
 
