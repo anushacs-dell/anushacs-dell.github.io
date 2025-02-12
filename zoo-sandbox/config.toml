@@ -97,7 +97,7 @@ textColorDark = "#142148"
       [[menu.main]]
       identifier = "spatialtools"
       name = "Spatial Tools"
-      url = "/resources/examples/spatialtools.html"
+      url = "/resources/examples/spatialtools/"
       parent = "examples"
       weight = 8
 
