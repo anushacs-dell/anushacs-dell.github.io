@@ -1,0 +1,153 @@
+{{ define "main" }}
+<div class="subn">
+<nav class="navbar navbar-lower" role="navigation">
+<div class="container">
+   <ol class="breadcrumb zbr">
+  <li class="active"><a href="/new/"><i class="fa fa-home"></i></a></li>
+   <li class="active">Get involved</li>
+   <li class="active">Feed the animals</li>
+   </ol>
+   <ul class="list-inline pull-right topr">
+    <li><a href="https://github.com/ZOO-Project/ZOO-Project/" class="btn btn-sm btn-hover btn-zoos hello" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Github"><span class="fa fa-github"></span></a></li>
+    <li><a href="https://www.openhub.net/p/zoo-project" class="btn btn-sm btn-hover btn-zoos hello" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Openhub"><span class="fa fa-circle-o"></span></a></li>
+   </ul>
+</div>
+</nav>
+</div>
+</nav>
+
+
+<div class="zoo-default">
+  <div class="container">
+    <div class="col-xs-12 col-sm-2 col-lg-2 text-center">
+      <span class="zoo-title "><i class="fa fa-thumbs-o-up bfs"></i></span>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-lg-10 text-center">	
+      <h1 class="section-heading">Feed the animals</h1>
+      <h2 class="sub-heading">ZOO-Project micro donations</h2>
+      <div class="well well well-heading">
+	<p class="intnp">There are many animals in the <a href="./Welcome">ZOO</a>. It takes time and energy to grow, feed and give support to all of them. Please consider a micro donation to help the <a href="./ZOO-Project/ZOO Tribe">ZOO-Tribe</a> enhancing and maintaining the ZOO-Project open source platform.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bblocks">
+ <div class="container">
+  <div class="row zserv">
+    <div class="col-md-6 col-xs-12 mtp mbp text-center">
+      <h2><i class="fa fa-heart"></i> Using ZOO-Project ?</h2>
+ 
+<div class="row text-center">
+  <div class="col-sm-12 col-md-12 text-center">
+<p class="mbp lp">Support us by donating via PayPal</p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="TGUS33M9XWB66">
+<input type="image" src="http://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_74x46.jpg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+ </div>
+</div>
+      
+    </div>
+    <div class="col-md-6 col-xs-12  mtp mbp">
+     <div class="row">
+       <div class="col-xs-4 col-md-3 text-center">
+	  <span class="zoo-animal ">
+	    <img src="/images/zoo-cheetah.png" class="img-responsive circ">
+	  </span>
+      </div>
+    <div class="col-xs-4 col-md-3 text-center">
+	 <span class="zoo-animal ">
+	    <img src="/images/zoo-snake.png" class="img-responsive circ">
+	  </span>
+    </div>
+    <div class="col-xs-4 col-md-3 text-center">
+	  <span class="zoo-animal ">
+	    <img src="/images/zoo-monkey.png" class="img-responsive circ">
+	  </span>
+    </div>
+
+    <div class="col-xs-4 col-md-3 text-center">
+	  <span class="zoo-animal ">
+	    <img src="/images/zoo-elephant.png" class="img-responsive circ">
+	  </span>
+    </div>
+
+   <div class="col-xs-4 col-md-3 text-center">
+	  <span class="zoo-animal ">
+	    <img src="/images/zoo-yak.png" class="img-responsive circ">
+	  </span>
+   </div>
+   <div class="col-xs-4 col-md-3 text-center">
+	  <span class="zoo-animal ">
+	    <img src="/images/zoo-gnu.png" class="img-responsive circ">
+	  </span>
+   </div>
+   <div class="col-xs-4 col-md-3 text-center">
+	  <span class="zoo-animal ">
+	    <img src="/images/zoo-camel.png" class="img-responsive circ">
+	  </span>
+   </div>
+    <div class="col-xs-4 col-md-3 text-center">
+	  <span class="zoo-animal ">
+	    <i class="icon-zoo-logo bfs"></i>
+	  </span>
+   </div>
+  </div>
+ </div>
+ </div>
+ </div>
+</div>
+
+<div class="zoo-land">
+
+
+    <a class="bird hello" href="https://twitter.com/ZOO_Project" data-toggle="tooltip" title="Thank you !" target="_blank" style="display: inline;"></a>
+    <div class="logo-wrapper">
+      <img class="img-responsive ct" src="../../images/zoo-landscape.png" style="opacity: 1;">
+    </div>
+  </div>
+</div>
+<script>
+$(function(){
+var shrinkHeader = 80;
+$(window).scroll(function() {
+	var scroll = getCurrentScroll();
+	if ( scroll >= shrinkHeader ) {
+		$('.navbar-brand').addClass('navbar-shrink');
+		$('.navbar-inverse').addClass('navbar-colored');
+		$('.navbar-nav').css({"margin":"0 0 0 15px"});
+		$(".sun").show();
+	$('.navbar-lower').addClass('navbarlower-colored');
+	}
+	else{
+		$('.navbar-brand').removeClass('navbar-shrink');
+		$('.navbar-inverse').removeClass('navbar-colored');
+		$('.navbar-nav').css({"margin":"25px 0 0 25px"});
+		$(".sun").hide();
+		$('.navbar-lower').removeClass('navbarlower-colored');
+	}
+});
+function getCurrentScroll() {
+	return window.pageYOffset;
+	}
+});
+
+$('.navbar-lower').affix({
+  offset: {top: 60}
+});	
+$('[data-toggle="tooltip"]').tooltip();
+</script>
+<script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22830578-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-22830578-1');
+</script>
+{{ end }}
