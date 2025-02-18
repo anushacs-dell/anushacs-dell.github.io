@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "header.html" . }}
+<body>
+    {{ partial "nav.html" . }}
+<main>
+        {{ block "main" . }}{{ end }}
+</main>
+    {{ partial "footer.html" . }}
+    
+ <script>
+        $('.navbar-lower').affix({offset: {top: 60}});
+        $('[data-toggle="tooltip"]').tooltip();
+        $(function(){
+        var shrinkHeader = 80;
+        $(window).scroll(function() {
+            var scroll = getCurrentScroll();
+            if ( scroll >= shrinkHeader ) {
+                $('.navbar-brand').addClass('navbar-shrink');
+                $('.navbar-inverse').addClass('navbar-colored');
+                $('.navbar-nav').css({"margin":"0 0 0 15px"});
+                $(".sun").show();
+            $('.navbar-lower').addClass('navbarlower-colored');
+            }
+            else{
+                $('.navbar-brand').removeClass('navbar-shrink');
+                $('.navbar-inverse').removeClass('navbar-colored');
+                $('.navbar-nav').css({"margin":"25px 0 0 25px"});
+                $(".sun").hide();
+                $('.navbar-lower').removeClass('navbarlower-colored');
+            }
+        });
+        function getCurrentScroll() {return window.pageYOffset;}
+        });
+
+        $(window).load(function(){
+        $( ".ct" ).animate({opacity: 1}, 3000, function() {$(".bird").show();}); 
+        var birdSound = document.getElementById('birdsound');
+        var birdTxt=document.getElementById('birdc');
+        birdTxt.onmouseover=function(){
+        birdSound.play();
+        return false;
+        };
+
+        });
+
+        
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-22830578-1');
+        </script>
+</body>
+</html>

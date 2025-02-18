@@ -1,0 +1,23 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+	<title></title>
+	<link>http://localhost:1313/about/</link>
+	<description>Recent content in Abouts on </description>
+	<generator>Hugo -- gohugo.io</generator>
+	<language>en-us</language>
+	<lastBuildDate>Fri, 07 Feb 2025 20:22:10 +0530</lastBuildDate>
+    
+        <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+	
+	
+	<item>
+		<title>Tribe</title>
+		<link>http://localhost:1313/about/tribe/</link>
+		<pubDate>Fri, 07 Feb 2025 20:22:10 +0530</pubDate>
+		
+		<guid>http://localhost:1313/about/tribe/</guid>
+		<description></description>
+	</item>
+	
+	</channel>
+</rss>
