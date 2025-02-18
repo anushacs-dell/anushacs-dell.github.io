@@ -15,29 +15,6 @@
     <link href="//fonts.googleapis.com/css?family=Days+One" rel="stylesheet" type="text/css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> 
 </head>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <body>
     <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
  <div class="container">
@@ -180,13 +157,8 @@
        
  </div>
 
- 
 
-
-
- 
-
-    <main>
+<main>
         
 <div class="subn">
 <nav class="navbar navbar-lower" role="navigation">
@@ -879,67 +851,10 @@
 </div>
 </div>
 </div>
-<script>
-$(function(){
-var shrinkHeader = 80;
-$(window).scroll(function() {
-	var scroll = getCurrentScroll();
-	if ( scroll >= shrinkHeader ) {
-		$('.navbar-brand').addClass('navbar-shrink');
-		$('.navbar-inverse').addClass('navbar-colored');
-		$('.navbar-nav').css({"margin":"0 0 0 15px"});
-		$(".sun").show();
-	$('.navbar-lower').addClass('navbarlower-colored');
-	
-	}
-	else{
-		$('.navbar-brand').removeClass('navbar-shrink');
-		$('.navbar-inverse').removeClass('navbar-colored');
-		$('.navbar-nav').css({"margin":"25px 0 0 25px"});
-		$(".sun").hide();
-		$('.navbar-lower').removeClass('navbarlower-colored');
-	
-	}
-});
-function getCurrentScroll() {
-	return window.pageYOffset;
-	}
-});
-
-$('[data-toggle="tooltip"]').tooltip();
-$('.navbar-lower').affix({offset: {top: 60}});	
-
-var event = new ol.View({
 
 
-
-
-
-
-    center: ol.proj.transform([100.5176245,13.746428], 'EPSG:4326','EPSG:3857'),
-    zoom: 11
-});
-
-var map = new ol.Map({
-  layers: [
-    new ol.layer.Tile({
-      source: new ol.source.OSM()
-    })
-  ],
-  controls: [],
-  interactions: [],
-  target: 'eventmap',
-  view: event
-});
-
-
-</script>
-
-    </main>
-  
-
-    
-
+</main>
+   
     <footer>
         <div class="container">
           <div class="row">
@@ -1044,7 +959,10 @@ var map = new ol.Map({
 
 
     
- <script>
+<script>
+
+
+
         $('.navbar-lower').affix({offset: {top: 60}});
         $('[data-toggle="tooltip"]').tooltip();
         $(function(){
@@ -1087,6 +1005,62 @@ var map = new ol.Map({
         gtag('js', new Date());
 
         gtag('config', 'UA-22830578-1');
-        </script>
+        
+$(function(){
+var shrinkHeader = 80;
+$(window).scroll(function() {
+	var scroll = getCurrentScroll();
+	if ( scroll >= shrinkHeader ) {
+		$('.navbar-brand').addClass('navbar-shrink');
+		$('.navbar-inverse').addClass('navbar-colored');
+		$('.navbar-nav').css({"margin":"0 0 0 15px"});
+		$(".sun").show();
+	$('.navbar-lower').addClass('navbarlower-colored');
+	
+	}
+	else{
+		$('.navbar-brand').removeClass('navbar-shrink');
+		$('.navbar-inverse').removeClass('navbar-colored');
+		$('.navbar-nav').css({"margin":"25px 0 0 25px"});
+		$(".sun").hide();
+		$('.navbar-lower').removeClass('navbarlower-colored');
+	
+	}
+});
+function getCurrentScroll() {
+	return window.pageYOffset;
+	}
+});
+
+$('[data-toggle="tooltip"]').tooltip();
+$('.navbar-lower').affix({offset: {top: 60}});	
+
+var event = new ol.View({
+//43.7779866,11.2473375
+//-58.39141,-34.58313
+//11.2473375,43.7779866
+//37.5667679,126.9749409,17
+//126.9749409,37.5667679,17
+//26.716309189796448,58.37335869669914
+//100.5176245,13.746428
+//-36.9846122,174.8794145
+    center: ol.proj.transform([174.8794145,-36.9846122], 'EPSG:4326','EPSG:3857'),
+    zoom: 11
+});
+
+var map = new ol.Map({
+  layers: [
+    new ol.layer.Tile({
+      source: new ol.source.OSM()
+    })
+  ],
+  controls: [],
+  interactions: [],
+  target: 'eventmap',
+  view: event
+});    
+
+
+</script>
 </body>
 </html>

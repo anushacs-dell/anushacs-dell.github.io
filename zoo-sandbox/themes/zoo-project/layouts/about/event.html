@@ -15,6 +15,7 @@
 </nav>
 </div>
 </nav>
+
 <div class="zoo-default">
   <div class="container">
     <div class="col-xs-12 col-sm-2 col-lg-2 text-center">
@@ -24,7 +25,7 @@
       <h1 class="section-heading">ZOO Events</h1>
       <h2 class="sub-heading">Promoting WPS worldwide</h2>
       <div class="well well well-heading">
-	<p class="intnp">The <a href="/about/tribe">ZOO Tribe</a> members have been presenting <b>ZOO-Project</b> and promoting <b>WPS</b> since 2009 at geospatial and open source related conferences <i class="fa fa-microphone"></i> and workshops <i class="fa fa-laptop"></i>. See you at next <b>ZOO events</b> !</p>
+	<p class="intnp">The <a href="./Tribe">ZOO Tribe</a> members have been presenting <b>ZOO-Project</b> and promoting <b>WPS</b> since 2009 at geospatial and open source related conferences <i class="fa fa-microphone"></i> and workshops <i class="fa fa-laptop"></i>. See you at next <b>ZOO events</b> !</p>
       </div>
     </div>
   </div>
@@ -41,8 +42,8 @@
 </div>
 <div id="eventmap">
  <div class="event" style="background: #663e05;opacity:0.75">
-  <a href="https://foss4g.asia/2024/" target="_blank">
-   <img class="img-responsive" src="https://2025.foss4g.org/images/foss4g_2025_logo_interim.png" alt="FOSS4G 2023" width="150" style="background:#fff" />
+  <a href="https://2025.foss4g.org/" target="_blank">
+   <img class="img-responsive" src="https://2025.foss4g.org/images/foss4g_2025_logo_interim.png" alt="FOSS4G 2025" width="150" style="background:#fff" />
   </a>
  </div>
 </div>
@@ -699,7 +700,7 @@
 </div>
 </div>
 </div>
-<script>
+ <script>
 $(function(){
 var shrinkHeader = 80;
 $(window).scroll(function() {
@@ -736,7 +737,9 @@ var event = new ol.View({
 //37.5667679,126.9749409,17
 //126.9749409,37.5667679,17
 //26.716309189796448,58.37335869669914
-    center: ol.proj.transform([100.5176245,13.746428], 'EPSG:4326','EPSG:3857'),
+//100.5176245,13.746428
+//-36.9846122,174.8794145
+    center: ol.proj.transform([174.8794145,-36.9846122], 'EPSG:4326','EPSG:3857'),
     zoom: 11
 });
 
@@ -751,7 +754,5 @@ var map = new ol.Map({
   target: 'eventmap',
   view: event
 });
-
-
 </script>
 {{ end }}
