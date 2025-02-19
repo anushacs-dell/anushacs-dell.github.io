@@ -97,7 +97,7 @@
         <td style="width:10%"><date>2024-07-05</date></td> 
         <td style="width:13%" class="hidden-xs">26.7163 58.3733</td>
         <td style="width:10%">Tartu </td>
-        <td style="width:11%"><img src="/images/flags/ee.png" /> <span class="hidden-xs">ESTONIA</span></td>
+        <td style="width:11%"><img src="../../images/flags/ee.png" /> <span class="hidden-xs">ESTONIA</span></td>
       </tr>
       <tr>
         <td><i class="fa fa-laptop"></i></td>
@@ -731,14 +731,7 @@ $('[data-toggle="tooltip"]').tooltip();
 $('.navbar-lower').affix({offset: {top: 60}});	
 
 var event = new ol.View({
-//43.7779866,11.2473375
-//-58.39141,-34.58313
-//11.2473375,43.7779866
-//37.5667679,126.9749409,17
-//126.9749409,37.5667679,17
-//26.716309189796448,58.37335869669914
-//100.5176245,13.746428
-//-36.9846122,174.8794145
+
     center: ol.proj.transform([174.8794145,-36.9846122], 'EPSG:4326','EPSG:3857'),
     zoom: 11
 });

@@ -27,7 +27,7 @@
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="/new/"><img src="/images/zoo-sun-logo.png" class="img-responsive sun" /> ZOO-Project</a>
+    <a class="navbar-brand" href="/"><img src="../../images/zoo-sun-logo.png" class="img-responsive sun" /> ZOO-Project</a>
    </div>
    <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
      <ul class="nav navbar-nav">
@@ -872,7 +872,7 @@
     
     <br/>
             <center>
-              <a href="https://gatewaygeomatics.com"><img src="/images/gatewaygeo-logo.png"  width="250" /></a>
+              <a href="https://gatewaygeomatics.com"><img src="../../images/gatewaygeo-logo.png"  width="250" /></a>
             </center>
     <br/>
             <center>
@@ -1046,12 +1046,7 @@ $('.navbar-lower').affix({offset: {top: 60}});
 
 var event = new ol.View({
 
-
-
-
-
-
-    center: ol.proj.transform([100.5176245,13.746428], 'EPSG:4326','EPSG:3857'),
+    center: ol.proj.transform([174.8794145,-36.9846122], 'EPSG:4326','EPSG:3857'),
     zoom: 11
 });
 
@@ -1066,7 +1061,6 @@ var map = new ol.Map({
   target: 'eventmap',
   view: event
 });
-
 
 </script>
 </body>
