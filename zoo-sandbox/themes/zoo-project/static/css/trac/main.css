@@ -52,7 +52,7 @@ float:left;
 margin:0;
 width:380px;
 height:180px;
-background:url(/images/trac/zoo-title.png) no-repeat;}
+background:url(../../images/trac/zoo-title.png) no-repeat;}
 
 
 h1.title{width:290px;position:relative;top:115px;left:15px;font-size:1.4em;letter-spacing:2px;color:#727272;text-transform:uppercase;padding:5px;
@@ -75,7 +75,7 @@ background:-moz-linear-gradient(top,  #e0e0e0,  #bbbbbb); /* for firefox 3.6+ */
 margin:0;
 
 width:533px;
-  background:url(/images/trac/zoo-banner.png) no-repeat;
+  background:url(../../images/trac/zoo-banner.png) no-repeat;
   height:180px;
 }
 
