@@ -6,8 +6,14 @@
 <main>
         {{ block "main" . }}{{ end }}
 </main>
-    {{ partial "footer.html" . }}
-    
+{{ if eq .Params.section "special" }} 
+    {{ partial "footer_special.html" . }}
+{{ else }}
+    {{ partial "footer_std.html" . }}
+{{ end }}
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22830578-1"></script> 
  <script>
         $('.navbar-lower').affix({offset: {top: 60}});
         $('[data-toggle="tooltip"]').tooltip();
@@ -32,17 +38,23 @@
         });
         function getCurrentScroll() {return window.pageYOffset;}
         });
+        
+        
+        $(document).ready(function () {
+    $(".ct").animate({ opacity: 1 }, 3000, function () {
+        $(".bird").show();
+    });
 
-        $(window).load(function(){
-        $( ".ct" ).animate({opacity: 1}, 3000, function() {$(".bird").show();}); 
-        var birdSound = document.getElementById('birdsound');
-        var birdTxt=document.getElementById('birdc');
-        birdTxt.onmouseover=function(){
-        birdSound.play();
-        return false;
+    var birdSound = document.getElementById("birdsound");
+    var birdTxt = document.getElementById("birdc");
+
+    if (birdTxt) {  // Check if element exists before setting event
+        birdTxt.onmouseover = function () {
+            birdSound.play();
+            return false;
         };
-
-        });
+    }
+});
 
         
 
@@ -54,3 +66,4 @@
         </script>
 </body>
 </html>
+

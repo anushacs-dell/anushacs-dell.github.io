@@ -48,7 +48,7 @@
 
 
 
-	    <li><a href="../..//about/tribe/"><i class="fa fa-fw fa-users"></i> Tribe</a></li>
+	    <li><a href="../../about/tribe/"><i class="fa fa-fw fa-users"></i> Tribe</a></li>
 
 
 
@@ -193,9 +193,9 @@
     </ul>
 
 </main>
-    
 
-    <footer>
+    
+<footer>
         <div class="container">
           <div class="row">
         <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
@@ -284,19 +284,23 @@
         </div>
       </div>    
     </div>
+
 <script src="../../js/jquery-1.10.2.js"></script>
 <script src="../../js/bootstrap.js"></script>
 <script src="../../js/ol.min.js"></script>
 <script src="../../js/prism.js"></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22830578-1"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 
 
 
-    
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22830578-1"></script> 
  <script>
         $('.navbar-lower').affix({offset: {top: 60}});
         $('[data-toggle="tooltip"]').tooltip();
@@ -321,17 +325,23 @@
         });
         function getCurrentScroll() {return window.pageYOffset;}
         });
+        
+        
+        $(document).ready(function () {
+    $(".ct").animate({ opacity: 1 }, 3000, function () {
+        $(".bird").show();
+    });
 
-        $(window).load(function(){
-        $( ".ct" ).animate({opacity: 1}, 3000, function() {$(".bird").show();}); 
-        var birdSound = document.getElementById('birdsound');
-        var birdTxt=document.getElementById('birdc');
-        birdTxt.onmouseover=function(){
-        birdSound.play();
-        return false;
+    var birdSound = document.getElementById("birdsound");
+    var birdTxt = document.getElementById("birdc");
+
+    if (birdTxt) {  
+        birdTxt.onmouseover = function () {
+            birdSound.play();
+            return false;
         };
-
-        });
+    }
+});
 
         
 
@@ -343,3 +353,6 @@
         </script>
 </body>
 </html>
+
+DEBUG - Page Section: resources
+DEBUG - Params Section: %!s(&lt;nil&gt;)
