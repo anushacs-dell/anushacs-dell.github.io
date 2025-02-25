@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This section showcases a range of ZOO-Project examples, from simple demonstrations to advanced ZOO-Services. Explore various WPS client applications to see practical implementations in action. Check out the source code and get inspired to build your own services">
+<meta name="author" content="">
+<title>Examples</title>
+
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/zoo-project.css" rel="stylesheet">
+    <link href="../../css/ol.min.css" rel="stylesheet">
+    <link href="../../css/prism.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Days+One" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> 
+    <script src="../../js/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+ <div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+    <span class="sr-only">Toggle navigation</span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/"><img src="../../images/zoo-sun-logo.png" class="img-responsive sun" /> ZOO-Project</a>
+   </div>
+   <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+     <ul class="nav navbar-nav">
+
+
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+
+
+
+
+
+
+
+	    <li><a href="https://zoo-project.github.io/docs/intro.html"><i class="fa fa-fw fa-info-circle"></i> Introduction</a></li>
+
+
+
+
+	    <li><a href="../../about/tribe/"><i class="fa fa-fw fa-users"></i> Tribe</a></li>
+
+
+
+
+	    <li><a href="../../about/event/"><i class="fa fa-fw fa-microphone"></i> Events</a></li>
+
+
+
+
+	    <li><a href="../../about/identity/"><i class="fa fa-fw fa-paw"></i> Identity</a></li>
+
+
+
+         </ul>
+       </li>
+
+
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+
+
+
+
+
+
+
+
+
+
+	    <li class="dropdown-header">Application</li>
+	    <li><a href="../../resources/download/"><i class="fa fa-fw fa-download"></i> Download</a></li>
+	    <li class="divider"></li>
+
+
+
+
+
+
+
+	    <li class="dropdown-header">Documentation</li>
+	    <li><a href="../../resources/userguide/"><i class="fa fa-fw fa-book"></i> User Guide</a></li>
+	    <li><a href="../../resources/workshops/"><i class="fa fa-fw fa-laptop"></i> Workshops</a></li>
+	    <li><a href="https://zoo-project.github.io/docs/C_API/"><i class="fa fa-fw fa-file-code-o"></i> API</a></li>
+	    <li class="divider"></li>
+
+
+
+
+
+
+
+	    <li class="dropdown-header">Media</li>
+	    <li><a href="../../resources/examples/"><i class="fa fa-fw fa-globe"></i> Examples</a></li>
+	    <li><a href="../../resources/presentation/"><i class="fa fa-fw fa-slideshare"></i> Presentation</a></li>
+
+
+
+         </ul>
+       </li>
+
+
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get involved<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+
+
+
+
+
+
+
+
+
+
+	    <li class="dropdown-header">Contribute</li>
+	    <li><a href="https://zoo-project.github.io/docs/contribute/index.html"><i class="fa fa-fw fa-user"></i> Contributor guide</a></li>
+	    
+	    <li class="divider"></li>
+
+
+
+
+
+
+
+	    <li class="dropdown-header">Sponsor</li>
+	    <li><a href="../../get-involved/sponsorship/"><i class="fa fa-fw fa-money"></i> Sponsorship</a></li>
+	    <li><a href="../../get-involved/knowledge_partners/"><i class="fa fa-fw fa-graduation-cap"></i> Knowledge partners</a></li>
+	    <li class="divider"></li>
+
+
+
+
+
+
+
+	    <li class="dropdown-header">Support</li>
+	    <li><a href="../../get-involved/feed_animals/"><i class="fa fa-fw fa-thumbs-o-up"></i> Feed the animals</a></li>
+
+
+
+         </ul>
+       </li>
+
+     </ul>
+   </div>
+       
+ </div>
+
+ 
+
+
+
+ 
+
+<main>
+        
+<div class="subn">
+<nav class="navbar navbar-lower" role="navigation">
+<div class="container">
+   <ol class="breadcrumb zbr">
+  <li class="active"><a href="/"><i class="fa fa-home"></i></a></li>
+   <li class="active">Resources</li>
+   <li class="active">Examples</li>
+   </ol>
+   <ul class="list-inline pull-right topr">
+    <li><a href="https://github.com/ZOO-Project/ZOO-Project/" class="btn btn-sm btn-hover btn-zoos hello" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Github"><span class="fa fa-github"></span></a></li>
+    <li><a href="https://www.openhub.net/p/zoo-project" class="btn btn-sm btn-hover btn-zoos hello" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Openhub"><span class="fa fa-circle-o"></span></a></li>
+   </ul>
+</div>
+</nav>
+</div>
+</nav>
+
+
+<div class="zoo-default">
+  <div class="container">
+    <div class="col-xs-12 col-sm-2 col-lg-2 text-center">
+      <span class="zoo-title "><i class="icon-zoo-logo bfs"></i></span>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-lg-10 text-center">	
+      <h1 class="section-heading">ZOO examples</h1>
+      <h2 class="sub-heading">Get inspired</h2>
+      <div class="well well well-heading">
+	<p class="intnp">This is the <a href="http://zoo-project.org">ZOO-Project</a> examples section. Simple to advanced <a href="./ZOO-Services">ZOO-Services</a> are demonstrated here through various example WPS client applications. Check the source and get inspired !</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bblocks">
+ <div class="container">
+  <div class="row zserv">
+    <div class="col-md-12 col-xs-12 text-center">
+      <h2>Examples</h2>      
+    </div>
+ </div>
+ </div>
+ </div>
+
+  <div class="zoo-content-npb">
+    <div class="container">
+	<div class="row">
+
+	<div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img src="../../images/spatialtools.png" class="img-responsive" />
+              <div class="caption text-center">
+                <h4>OGR spatial tools</h4>                
+                <p class="text-center"><a href="https://zoo-project.org/examples/spatialtools.html" class="btn btn-zoo btn-lg" role="button"><i class="fa fa-eye"></i> view</a></p>
+            </div>
+          </div>
+        </div>
+
+
+	<div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail">
+              <img src="../../images/gdal_profile.png" class="img-responsive" />
+              <div class="caption text-center">
+                <h4>GDAL profile</h4>                
+                <p class="text-center"><a href="https://zoo-project.org/examples/gdal_profile.html" class="btn btn-zoo btn-lg" role="button"><i class="fa fa-eye"></i> view</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail">
+              <img src="../../images/cgal.png" class="img-responsive" />
+              <div class="caption text-center">
+                <h4>CGAL triangulations</h4>
+                <p class="text-center"><a href="https://zoo-project.org/examples/cgal.html" class="btn btn-zoo btn-lg" role="button"><i class="fa fa-eye"></i> view</a></p>         
+            </div>
+          </div>
+        </div>
+
+       <div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img src="../../images/otb-example.png" class="img-responsive" />
+              <div class="caption text-center">
+                <h4>OTB applications</h4>
+                <p class="text-center"><a href="https://zoo-project.org/examples/otb-example.html" class="btn btn-zoo btn-lg" role="button"><i class="fa fa-eye"></i> view</a> </p>         
+            </div>
+          </div>
+        </div>
+	
+    </div>
+
+<div class="row">
+
+        <div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img src="../../images/saga-example.png" class="img-responsive" />
+              <div class="caption text-center">
+                <h4>SAGA-GIS examples</h4>
+                <p class="text-center"><a href="https://zoo-project.org/examples/saga-example.html" class="btn btn-zoo btn-lg" role="button"><i class="fa fa-eye"></i> view</a> </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img src="http://placehold.it/500x250/E0E0E0?text=Coming+soon">
+              <div class="caption text-center">
+                <h4>GRASS GIS stuff</h4>
+                <p class="text-center"><a href="../../examples/#.html" class="btn btn-zoo btn-lg" role="button"><i class="fa fa-eye"></i> coming soon</a> </p>                
+            </div>
+          </div>
+        </div>
+
+
+
+</div>
+
+
+</div>
+</div>
+
+<div id="credits" class="paper">
+ <div class="container text-center">
+   <h1 class="content-heading">Credits</h1>
+   <div class="well text-center mtp">
+    <ul class="list-unstyled spg">
+<li>WPS Server: <a href="http://zoo-project.org/docs/client/">ZOO-Kernel</a> and <a href="./ZOO-Services"> friends</a></li>
+<li>WPS Client: <a href="http://zoo-project.org/docs/client/"> ZOO-Client</a></li>
+<li>Webmapping: <a href="http://openlayers.org"> OpenLayers</a></li>
+<li>Base maps: <a href="http://openstreetmap.org"> OpenStreetMap</a></li>
+<li>CSS: <a href="http://getbootsrap.com"> Bootstrap</a></li>
+   </div>
+  </div>
+</div>
+<script>
+$(function(){
+var shrinkHeader = 80;
+$(window).scroll(function() {
+	var scroll = getCurrentScroll();
+	if ( scroll >= shrinkHeader ) {
+		$('.navbar-brand').addClass('navbar-shrink');
+		$('.navbar-inverse').addClass('navbar-colored');
+		$('.navbar-nav').css({"margin":"0 0 0 15px"});
+		$(".sun").show();
+	$('.navbar-lower').addClass('navbarlower-colored');
+	}
+	else{
+		$('.navbar-brand').removeClass('navbar-shrink');
+		$('.navbar-inverse').removeClass('navbar-colored');
+		$('.navbar-nav').css({"margin":"25px 0 0 25px"});
+		$(".sun").hide();
+		$('.navbar-lower').removeClass('navbarlower-colored');
+	}
+});
+function getCurrentScroll() {
+	return window.pageYOffset;
+	}
+});
+
+$('.navbar-lower').affix({
+  offset: {top: 60}
+});	
+$('[data-toggle="tooltip"]').tooltip();
+
+
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-22830578-1');
+</script>
+
+</main>
+
+    
+<footer>
+        <div class="container">
+          <div class="row">
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <h2 class="sub">Sponsors</h2>
+    
+    <br/>
+            <center>
+              <a href="https://gatewaygeomatics.com"><img src="../../images/gatewaygeo-logo.png"  width="250" /></a>
+            </center>
+    <br/>
+            <center>
+              <a href="​http://geolabs.fr" class="ung"></a>
+              
+            </center>
+    <br/><br/>
+            <center>
+    <a href="/new/Get involved/Sponsorship" class="btn btn-warning btn-lg btnf mtp">All sponsors</a>
+    </center>	    
+    
+        </div>
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <h2 class="sub">Related links</h2>
+          <div class="col-lg-12 col-sm-12 col-xs-12">
+            <center>
+            <a href="http://osgeo.org" class="una" style="width: 159px;height: 50px;">
+                   
+                   <embed src="../../images/osgeo-logo-white.svg" type="image/svg+xml" />
+                </a>
+            <p class="int mt">ZOO-Project is an incubating software of the Open Source Geospatial Foundation</p>
+            </center>
+            </div>
+    
+          <div class="col-lg-12 col-sm-12 col-xs-12">
+            <center>
+            <a href="http://www.opengeospatial.org/standards/wps" class="unb"></a>
+            <p class="int mt2">ZOO-Project implements the WPS standard of the Open Geospatial Consortium</p>
+          </center>
+            </div>
+    
+        </div>
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+    
+          <h2 class="sub">Certification</h2>
+              <div class="col-xs-6">
+            <a href="http://www.ogc.org/resource/products/details/?pid=1767" target="_parent"> 
+                  <img src="https://portal.ogc.org/public_ogc/compliance/OGC_Certified_Badge.png" alt="Certified OGC Compliant Logo" height="104" style="padding:0;margin:0;border:0;"> 
+                </a>
+              </div>
+              <div class="col-xs-6">
+            <a href="http://www.ogc.org/resource/products/details/?pid=1767" target="_parent">
+                  <img src="https://portal.ogc.org/public_ogc/compliance/badge.php?s=ogcapi-processes-1 1.0&amp;r=1&amp;n=1" height="45px" style="padding:0;margin:0;border:0;">
+                  <img src="https://portal.ogc.org/public_ogc/compliance/badge.php?s=wps/2.0%202.0.2&r=1&n=1" height="45px" style="padding:0;margin:0;border:0;">
+                </a>
+              </div>
+              <span class="col-xs-12" style="color:#BBB;font-size:62.3%;"><br>Valid Until: 2024-02-19</span>
+              <br />
+    
+          <h2 class="sub">Next event</h2>
+             
+    
+          <div class="col-lg-12 col-sm-12 col-xs-6">
+            <center>
+              <a href="https://foss4g.asia/2024/" class="unca" target="_blank">
+                   <img src="https://2025.foss4g.org/images/foss4g_2025_logo_interim.png" width="140"  style="background: #fff;opacity: 75%;"/>
+                  </a>
+            </center>
+          </div>
+          
+          <center>
+            <a href="/new/ZOO-Project/ZOO-Events" class="btn btn-warning btn-lg btnf mt">All events</a>	    
+          </center>
+    
+          <div class="col-lg-12 col-sm-12 col-xs-12">
+            
+            </div>
+    
+    
+        </div>
+          </div>
+        </div>
+      </footer>
+      
+      <div class="cdts">
+        <div class="container text-center">
+          <p> © Copyright 2009 - 2025 - <a class="ext-link" href="http://www.zoo-project.org"><i class="icon-zoo-logo"></i> ZOO Project</a> - All Rights Reserved.</p> 
+        </div>
+      </div>    
+    </div>
+
+
+<script src="../../js/bootstrap.js"></script>
+<script src="../../js/ol.min.js"></script>
+<script src="../../js/prism.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22830578-1"></script> 
+ <script>
+        $('.navbar-lower').affix({offset: {top: 60}});
+        $('[data-toggle="tooltip"]').tooltip();
+        $(function(){
+        var shrinkHeader = 80;
+        $(window).scroll(function() {
+            var scroll = getCurrentScroll();
+            if ( scroll >= shrinkHeader ) {
+                $('.navbar-brand').addClass('navbar-shrink');
+                $('.navbar-inverse').addClass('navbar-colored');
+                $('.navbar-nav').css({"margin":"0 0 0 15px"});
+                $(".sun").show();
+            $('.navbar-lower').addClass('navbarlower-colored');
+            }
+            else{
+                $('.navbar-brand').removeClass('navbar-shrink');
+                $('.navbar-inverse').removeClass('navbar-colored');
+                $('.navbar-nav').css({"margin":"25px 0 0 25px"});
+                $(".sun").hide();
+                $('.navbar-lower').removeClass('navbarlower-colored');
+            }
+        });
+        function getCurrentScroll() {return window.pageYOffset;}
+        });
+        
+        
+        $(document).ready(function () {
+    $(".ct").animate({ opacity: 1 }, 3000, function () {
+        $(".bird").show();
+    });
+
+    var birdSound = document.getElementById("birdsound");
+    var birdTxt = document.getElementById("birdc");
+
+    if (birdTxt) {  
+        birdTxt.onmouseover = function () {
+            birdSound.play();
+            return false;
+        };
+    }
+});
+
+        
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-22830578-1');
+        </script>
+</body>
+</html>
+
